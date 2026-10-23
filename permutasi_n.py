@@ -1,5 +1,7 @@
 import math
 import itertools
 
-# Koding di sini
+def permutasiN():
 
+    # Koding Disini!
+    pass
