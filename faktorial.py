@@ -1,10 +1,10 @@
 import math
-import itertools
 
 # Koding di sini
 
-n = 5
+def faktorial(n):
 
-hasil = math.factorial(n)
+    hasil = math.factorial(n)
+    proses = " x ".join(str(i) for i in range(n, 0, -1))
 
-print(hasil)
+    print(f"\nFaktorial {n} adalah {hasil}\nHasil dari {proses}\n")
