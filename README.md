@@ -9,7 +9,7 @@
 
 ## 📋 To-Do List Pengerjaan Tugas Kombinatorika
 
-*Pilih Dua* dan Tandai dengan `[x]` yang mau dikerjakan.
+*Tandai dengan `[x]` yang mau dikerjakan.
 
 - [ ] **1. Faktorial**
   * Rumus: $n!$
