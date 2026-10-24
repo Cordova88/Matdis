@@ -11,7 +11,7 @@
 
 *Tandai dengan `[x]` yang mau dikerjakan.
 
-- [ ] **1. Faktorial**
+- [ x ] **1. Faktorial**
   * Rumus: $n!$
   * Fungsi terkait: `math.factorial()`
 
