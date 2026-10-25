@@ -18,10 +18,3 @@ def permutasiN(elemen):
     for i in susunan:
         print(f"{nomor}. {', '.join(i)}")
         nomor += 1
-
-# buku = "ABC"
-
-# hasil = list(itertools.permutations(buku))
-
-# for i in itertools.permutations(buku):
-#     print("".join(i))
