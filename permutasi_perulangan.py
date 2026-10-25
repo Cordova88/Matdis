@@ -1,7 +1,20 @@
 import math
 import itertools
 
-def permutasiPerulangan():
+def permutasiPerulangan(elemen, r):
 
-    # Koding Disini!
-    pass
+    n = len(elemen)
+    total = math.pow(n, r)
+    proses = " x ".join(str(n) for i in range(r))
+
+    susunan = list(itertools.product(elemen, repeat=r))
+
+    print(f"\nPermutasi P = n^r adalah {total}")
+    print(f"Hasil dari: {proses}")
+
+    print("Banyaknya Cara:\n")
+
+    nomor = 1
+    for i in susunan:
+        print(f"{nomor}. [{', '.join(i)}]")
+        nomor += 1
