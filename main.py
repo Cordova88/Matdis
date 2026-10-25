@@ -1,28 +1,31 @@
-from faktorial import faktorial
+from utils import menu, jeda, garis, bersihkanLayar
+from permutasi_n import permutasiN
 
 if __name__ == "__main__":
 
-    pilihan = int(input("Masukkan Pilihan: "))
+    isRunning = True
 
-    if pilihan == 1:
-        faktorial(5)
-    elif pilihan == 2:
-        pass
-    elif pilihan == 3:
-        pass
-    elif pilihan == 4:
-        pass
-    elif pilihan == 5:
-        pass
-    elif pilihan == 6:
-        pass
-    elif pilihan == 7:
-        pass
-    elif pilihan == 8:
-        pass
-    elif pilihan == 9:
-        pass
-    elif pilihan == 10:
-        pass
-    else:
-        print("Pilihan Tidak Valid")
+    while(isRunning):
+
+        bersihkanLayar()
+        menu()
+        pilihan = int(input("> "))
+
+        if pilihan == 0:
+            isRunning = False
+        if pilihan == 1:
+            pass
+        elif pilihan == 2:
+            bersihkanLayar()
+            print("Studi Kasus:\n")
+            print("Ada 4 mahasiswa: M, N, O, dan P\nyang akan maju presentasi tugas Matematika Diskrit.\nBerapa banyak susunan giliran urutan presentasi yang\nmungkin dibuat dari keempat mahasiswa tersebut?")
+
+            jeda()
+
+            mahasiswa = ["M", "N", "O", "P"]
+            permutasiN(mahasiswa)
+
+            jeda()
+            
+        else:
+            print("Pilihan Tidak Valid")
