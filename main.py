@@ -1,6 +1,8 @@
 from utils import menu, jeda, garis, bersihkanLayar
 from permutasi_n import permutasiN
 from permutasi_r_dari_n import permutasiRN
+from kombinasi import kombinasi
+from kombinasi_perulangan import kombinasiPerulangan
 
 if __name__ == "__main__":
 
@@ -39,5 +41,38 @@ if __name__ == "__main__":
             permutasiRN(jumlahObjek, jumlahDipilih)
 
             jeda()
+
+        elif pilihan == 7:
+            bersihkanLayar()
+            print("Studi Kasus:\n")
+            print("Ada 4 mahasiswa: M, N, O, dan P.")
+            print("Akan dipilih 2 orang untuk menjadi perwakilan tim proyek Matematika Diskrit.")
+            print("Berapa banyak susunan tim (kombinasi) yang mungkin dibuat dari keempat mahasiswa tersebut?\n")
+
+            jeda()
+
+            mahasiswa = ['M', 'N', 'O', 'P']
+            jumlahDipilih = 2
+            kombinasi(mahasiswa, jumlahDipilih)
+
+            jeda()
+
+        elif pilihan == 10:
+                    jenis_donat = ['Cokelat', 'Stroberi', 'Matcha']
+                    n = len(jenis_donat) # 3 jenis
+                    jumlahDipilih = 4                # 4 donat yang akan dipilih
+                    
+                    bersihkanLayar()
+                    print("Studi Kasus:\n")
+                    print(f"Terdapat n jenis donat: {', '.join(jenis_donat)}.")
+                    print("Akan dibeli 4 buah donat. Setiap jenis rasa persediaannya cukup (boleh dipilih berulang).")
+                    print("Berapa banyak kombinasi rasa donat yang bisa dibawa pulang?\n")
+        
+                    jeda()
+        
+                    kombinasiPerulangan(jenis_donat, jumlahDipilih)
+        
+                    jeda()
+
         else:
             print("Pilihan Tidak Valid")
