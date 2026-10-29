@@ -4,6 +4,7 @@ from permutasi_r_dari_n import permutasiRN
 from kombinasi import kombinasi
 from kombinasi_perulangan import kombinasiPerulangan
 from permutasi_perulangan import permutasiPerulangan
+from permutasi_unsur_identik import permutasi_unsurIdentik
 
 if __name__ == "__main__":
 
@@ -54,7 +55,17 @@ if __name__ == "__main__":
             permutasiPerulangan(jumlahObjek, panjang)
 
             jeda()
+        elif pilihan == 5:
+            bersihkanLayar()
+            print("Studi Kasus:\n")
+            print(f"Farid memiliki 1 kata berisi 5 karakter, yaitu \"MALAM\".\nJika Farid ingin mengacak urutan karakter agar menjadi sebuah kata baru,\nada berapa banyak susunan kata yang dapat dibuat?\n(unsur identik M = 2, A = 2, L = 1 )")
 
+            jeda()
+
+            teks = "MALAM"
+            permutasi_unsurIdentik(teks)
+
+            jeda()
         elif pilihan == 7:
             bersihkanLayar()
             print("Studi Kasus:\n")
