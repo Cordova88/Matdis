@@ -4,6 +4,7 @@ from permutasi_r_dari_n import permutasiRN
 from kombinasi import kombinasi
 from kombinasi_perulangan import kombinasiPerulangan
 from permutasi_perulangan import permutasiPerulangan
+from permutasi_melingkar import permutasiMelingkar
 
 if __name__ == "__main__":
 
@@ -52,6 +53,19 @@ if __name__ == "__main__":
             jumlahObjek = ['0', '1']
             panjang = 4
             permutasiPerulangan(jumlahObjek, panjang)
+
+            jeda()
+
+        elif pilihan == 6:
+            bersihkanLayar()
+            print("Studi Kasus:\n")
+            print("Lima orang, yaitu A, B, C, D, dan E, duduk mengelilingi meja bundar. Berapa susunan duduk yang berbeda jika susunan yang hanya berbeda karena rotasi dianggap sama?.")
+
+            jeda()
+
+            orang = ["A", "B", "C", "D", "E"]
+            # panjang = 5
+            permutasiMelingkar(orang)
 
             jeda()
 
